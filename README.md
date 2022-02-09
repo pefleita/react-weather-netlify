@@ -4,4 +4,4 @@ Reactjs practice project consuming services from [OpenWeather](https://openweath
 
 ## View Demo
 
-[Clima App](https://pefleita.github.io/react-weather/)
+[Clima App](https://pefleita-react-weather.netlify.app/)
