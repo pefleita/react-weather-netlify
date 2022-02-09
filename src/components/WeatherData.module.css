@@ -1,0 +1,96 @@
+.weatherDataContainer {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.weatherDataContainer h1 {
+  font-size: 28pt;
+}
+
+.weatherDataBlockOne,
+.weatherDataBlockTwo {
+  display: flex;
+  color: #e8e8e8;
+}
+
+.weatherDataBlockOne {
+  justify-content: space-around;
+}
+
+.weatherDataBlockTwo {
+  justify-content: center;
+}
+
+.weatherDataBlockOne * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.weatherDataBlockOne > div {
+  padding: 10px;
+}
+
+.weatherDataBlockOne .description {
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: 18pt;
+}
+
+.weatherDataBlockTwo {
+  align-content: center;
+  margin-top: 60px;
+}
+
+.weatherDataBlockTwo > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  padding: 0 25px;
+  font-size: 18pt;
+}
+
+.temperature {
+  font-size: 72pt;
+  position: relative;
+}
+.temperature .deg {
+  font-size: 20pt;
+  position: absolute;
+  top: 20px;
+}
+
+.tempMaxMin {
+  font-size: 16pt;
+  font-weight: 300;
+}
+
+.tempMaxMin .max {
+  color: #f77462;
+}
+
+.tempMaxMin .min {
+  color: #65b6bc;
+}
+
+.cityNoFound {
+  display: flex;
+  justify-content: center;
+  font-weight: 300;
+  color: #e8e8e8;
+  font-size: 12pt;
+}
+
+@media (max-width: 500px) {
+  .weatherDataBlockOne,
+  .weatherDataBlockTwo,
+  .weatherDataBlockTwo > p {
+    flex-direction: column;
+  }
+
+  .weatherDataBlockOne > div {
+    text-align: center;
+  }
+}

@@ -1,0 +1,38 @@
+.weatherContainer {
+  display: flex;
+  justify-content: center;
+  background-color: #fff8f7;
+  height: 100vh;
+}
+
+.weatherContainer > div {
+  flex: 1;
+  padding: 30px;
+}
+
+.weatherContainer > div:first-child {
+  color: #fff;
+  background-color: #f77462;
+}
+
+.weatherContainer > div:last-child {
+  color: #e8e8e8;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)),
+    url("assets/img/weather-bg-min.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 500px) {
+  .weatherContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .weatherContainer > div {
+    flex: none;
+  }
+
+  .weatherContainer > div:last-child {
+    min-height: 100%;
+  }
+}
